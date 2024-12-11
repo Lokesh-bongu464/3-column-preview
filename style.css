@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem;
+  font-size: 15px;
+  font-family: Lexend Deca;
+}
+.container{
+  max-width: 900px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sedans .context{
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs .context{
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury .context{
+  background-color: hsl(179, 100%, 13%);
+}
+.context{
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+.title{
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  font-size: 30px;
+}
+.subtitle{
+  color: hsla(0, 0%, 100%, 0.75);
+}
+button{
+  width:6.5rem;
+  height: 2rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+}
+.sedans .btn{
+  color: hsl(31, 77%, 52%);
+}
+.suvs .btn{
+  color:  hsl(184, 100%, 22%);
+}
+.luxury .btn{
+  color: hsl(179, 100%, 13%);
+}
+button:hover{
+  background-color:rgb(0, 149, 255);
+}
+@media screen and (max-width:830px) and (min-width:630px){
+ body{
+  margin: 8rem;
+  font-size: 10px;
+ }
+ .title{
+  font-size: 20px;
+ }
+ button{
+  width:4rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+ }
+ .btn{
+  font-size: 10px;
+ }
+}
+@media screen and (max-width:630px){
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  .context{
+    padding: 1rem;
+  }
+  .title{
+    font-size: 22px;
+   }
+   .subtitle{
+    font-size: 10px;
+   }
+   
+   body{
+    margin: 8rem;
+    font-size: 12px;
+   }
+   button{
+    width:3.5rem;
+    height: 1.2rem;
+    border-radius: 0.8rem;
+   }
+   .btn{
+    font-size: 10px;
+   }
+   .context{
+    padding: 0.8rem;
+    gap: 1rem;
+  
+  }
+
+ }
